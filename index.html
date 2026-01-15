@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Portfolio | Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span>ODFab Engineering</span>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Engineering portfolio</span>
+          <h1>Hi, I'm Your Name - an engineer who ships reliable products.</h1>
+          <p class="subhead">
+            I design and build resilient backend services, developer tools, and the occasional UI that helps teams see their work.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn ghost" href="mailto:you@example.com">Email me</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-chip">
+              <span class="chip-label">Location</span>
+              <span class="chip-value">City, Country</span>
+            </div>
+            <div class="meta-chip">
+              <span class="chip-label">Specialty</span>
+              <span class="chip-value">Platforms | Data | Reliability</span>
+            </div>
+            <div class="meta-chip">
+              <span class="chip-label">Availability</span>
+              <span class="chip-value">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar" role="img" aria-label="Add a headshot or brand graphic"
+               style="display:grid;place-items:center;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;background:radial-gradient(circle at 20% 20%, rgba(124,92,255,0.25), transparent 45%), radial-gradient(circle at 80% 30%, rgba(34,211,238,0.20), transparent 42%), linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));">
+            Add photo
+          </div>
+          <div class="hero-card-body">
+            <h3 class="card-title">Currently</h3>
+            <p class="card-subtitle">Senior Engineer @ Your Company</p>
+            <ul class="quick-list">
+              <li><span class="dot"></span>Building a platform that ships services with one command.</li>
+              <li><span class="dot"></span>Leading reliability efforts and incident playbooks.</li>
+              <li><span class="dot"></span>Coaching teams on observability and delivery speed.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/your-handle" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Three sample tabs below - swap in your work, screenshots, and links. Copy one and adjust IDs if you need more.</p>
+        </div>
+
+        <div class="tabs">
+          <input class="tab-input" type="radio" name="project-tabs" id="tab-1" checked>
+          <label class="tab-label" for="tab-1">Platform API</label>
+
+          <input class="tab-input" type="radio" name="project-tabs" id="tab-2">
+          <label class="tab-label" for="tab-2">Automation</label>
+
+          <input class="tab-input" type="radio" name="project-tabs" id="tab-3">
+          <label class="tab-label" for="tab-3">Analytics</label>
+
+          <div class="tab-panels">
+            <div class="tab-panel" id="panel-1">
+              <div class="project">
+                <div>
+                  <div class="project-title-row">
+                    <h3>Platform API & Deployment</h3>
+                    <span class="pill">Go | Postgres | k8s</span>
+                  </div>
+                  <p class="project-summary">
+                    Unified API and delivery pipeline that ships microservices with consistent auth, metrics, and rollout controls.
+                  </p>
+                  <div class="project-grid">
+                    <div class="project-card">
+                      <h4>What I built</h4>
+                      <ul>
+                        <li>Designed contracts for auth, secrets, and observability across 50+ services.</li>
+                        <li>Reduced deploy time from 30m to 5m with blue/green automation.</li>
+                      </ul>
+                    </div>
+                    <div class="project-card">
+                      <h4>Impact</h4>
+                      <ul>
+                        <li>Cut incidents by 40% via typed configs and canary defaults.</li>
+                        <li>Enabled self-serve onboarding with a single CLI command.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="placeholder-media">
+                    <h4>Drop in a screenshot</h4>
+                    <p>Replace this block with a product shot or architecture diagram.</p>
+                  </div>
+                  <div class="media-caption">Save an image in this folder and point an &lt;img&gt; tag here.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="panel-2">
+              <div class="project">
+                <div>
+                  <div class="project-title-row">
+                    <h3>Automation & Reliability</h3>
+                    <span class="pill">Python | Terraform</span>
+                  </div>
+                  <p class="project-summary">
+                    Workflow engine that provisions test environments on demand and runs validations before merging.
+                  </p>
+                  <div class="project-grid">
+                    <div class="project-card">
+                      <h4>Highlights</h4>
+                      <ul>
+                        <li>Ephemeral stacks spun up in 90s with isolated data.</li>
+                        <li>Golden path tests block regressions on critical flows.</li>
+                      </ul>
+                    </div>
+                    <div class="project-card">
+                      <h4>Role</h4>
+                      <ul>
+                        <li>Owned IaC modules, approvals, and observability hooks.</li>
+                        <li>Partnered with QA to define pass/fail SLOs.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="placeholder-media">
+                    <h4>Show your tooling</h4>
+                    <p>Add a screenshot of the workflow, dashboard, or CLI output.</p>
+                  </div>
+                  <div class="media-caption">Update <code>placeholder-media</code> with an image tag when ready.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="panel-3">
+              <div class="project">
+                <div>
+                  <div class="project-title-row">
+                    <h3>Analytics & Insights</h3>
+                    <span class="pill">TypeScript | D3</span>
+                  </div>
+                  <p class="project-summary">
+                    Built a metrics hub so teams can answer product and ops questions without digging through logs.
+                  </p>
+                  <div class="project-grid">
+                    <div class="project-card">
+                      <h4>Outcomes</h4>
+                      <ul>
+                        <li>90th percentile latency dropped 18% after surfaced bottlenecks.</li>
+                        <li>Stakeholders self-serve dashboards; fewer ad-hoc data pulls.</li>
+                      </ul>
+                    </div>
+                    <div class="project-card">
+                      <h4>Tech</h4>
+                      <ul>
+                        <li>ETL with streaming events + warehouse models.</li>
+                        <li>Interactive charts with drilldowns and annotations.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="placeholder-media">
+                    <h4>Swap in your chart</h4>
+                    <p>Drop a chart, dashboard, or before/after metric visualization here.</p>
+                  </div>
+                  <div class="media-caption">You can also embed a GIF of the interaction.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="template">
+          Add another tab: duplicate an input/label pair, add a new <code>.tab-panel</code> with a matching ID, and extend the selectors in <code>styles.css</code> for <code>#tab-4</code>/<code>#panel-4</code>.
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills & Process</h2>
+          <p>Swap tags for your stack. Keep the buckets that fit - backend, data, frontend, DevOps, leadership.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="card">
+            <h3>Backend / Services</h3>
+            <div class="tag-row">
+              <span class="tag">Go</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">gRPC</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Data / Observability</h3>
+            <div class="tag-row">
+              <span class="tag">Postgres</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">dbt</span>
+              <span class="tag">Prometheus</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Delivery</h3>
+            <div class="tag-row">
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Feature flags</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Frontend</h3>
+            <div class="tag-row">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">D3</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Leadership</h3>
+            <div class="tag-row">
+              <span class="tag">Tech strategy</span>
+              <span class="tag">Roadmapping</span>
+              <span class="tag">Mentorship</span>
+              <span class="tag">Incident comms</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Ways of working</h3>
+            <ul class="checklist">
+              <li>Start with crisp problem statements.</li>
+              <li>Ship vertical slices early; measure impact.</li>
+              <li>Automate repeat work; document as you go.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container two-col">
+        <div class="card">
+          <div class="section-head">
+            <h2>About</h2>
+            <p>Short story about how you work, what motivates you, and the teams you thrive in.</p>
+          </div>
+          <p>
+            I enjoy untangling complex systems, creating clear interfaces, and setting up tooling that keeps teams fast without breaking things.
+            Outside of work, I like mentoring junior engineers and writing about the lessons that stick.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How I work</h3>
+          <ul class="checklist">
+            <li>Map the system and choose constraints before shipping.</li>
+            <li>Instrument early - logs, traces, alerts tied to user outcomes.</li>
+            <li>Bias to pairing and RFCs when solving ambiguous problems.</li>
+          </ul>
+          <div class="callout">
+            <h3>Quick template</h3>
+            <ol>
+              <li>Replace section titles and tags with your details.</li>
+              <li>Add a headshot and screenshots for each tab.</li>
+              <li>Link buttons to your email, resume, GitHub, and LinkedIn.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="card">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>Ready to chat? Swap in the best way to reach you.</p>
+          </div>
+          <p class="contact-line">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p class="contact-line">LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">linkedin.com/in/your-handle</a></p>
+          <p class="contact-line">GitHub: <a href="https://github.com/your-handle" target="_blank" rel="noreferrer">github.com/your-handle</a></p>
+        </div>
+        <div class="card">
+          <h3>Collaboration fit</h3>
+          <p class="contact-line">I like roles where I can pair closely with product and design, own reliability, and help teams ship with confidence.</p>
+          <p class="small-note">Swap this copy for what you're looking for next - full-time, freelance, advising, or something else.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>Built for your next role.</span>
+      <div class="footer-right">
+        <a href="mailto:you@example.com">Email</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

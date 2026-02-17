@@ -350,15 +350,13 @@ a:hover{ text-decoration: underline; }
 
 /* Show panel when its radio is checked (order matters) */
 #tab-1:checked ~ .tab-panels #panel-1,
-#tab-2:checked ~ .tab-panels #panel-2,
-#tab-3:checked ~ .tab-panels #panel-3{
+#tab-2:checked ~ .tab-panels #panel-2{
   display: block;
 }
 
 /* Active tab label styling */
 #tab-1:checked + label,
-#tab-2:checked + label,
-#tab-3:checked + label{
+#tab-2:checked + label{
   background: linear-gradient(135deg, rgba(124,92,255,0.35), rgba(34,211,238,0.22));
   border-color: rgba(255,255,255,0.20);
   color: var(--text);

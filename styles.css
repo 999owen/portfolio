@@ -480,6 +480,10 @@ a:hover{ text-decoration: underline; }
   gap: 14px;
 }
 
+.two-col > .card:only-child{
+  grid-column: 1 / -1;
+}
+
 .checklist{
   margin: 10px 0 0 0;
   padding-left: 18px;
@@ -537,6 +541,10 @@ a:hover{ text-decoration: underline; }
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 14px;
+}
+
+.contact-grid > .card:only-child{
+  grid-column: 1 / -1;
 }
 
 .contact-line{
